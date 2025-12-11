@@ -3,7 +3,6 @@ import FilterControls from './components/FilterControls';
 import PokemonCard from './components/PokemonCard';
 import { Suspense } from 'react';
 
-// Next.js 16: searchParams is a Promise
 type SearchParams = Promise<{ [key: string]: string | string[] | undefined }>;
 
 export default async function Page(props: { searchParams: SearchParams }) {
